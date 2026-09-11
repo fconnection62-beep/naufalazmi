@@ -3,8 +3,6 @@
 import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
 import { useRef, useSyncExternalStore, type ReactNode } from "react";
 
-import { DottedPattern } from "@/components/ui/dotted-pattern";
-
 type Polaroid = {
   id: string;
   rotate: number;
