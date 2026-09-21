@@ -5,8 +5,8 @@ import { AnimatePresence, motion } from "motion/react";
 import { useState, type ReactNode } from "react";
 
 type Entry = {
-  company: string;
   role: string;
+  company: string;
   period: string;
   slug?: string;
   brand?: string;
@@ -14,39 +14,53 @@ type Entry = {
 
 const ENTRIES: Entry[] = [
   {
-    company: "BPS-Statistic Indonesia",
+    role: "SME's Owner",
+    company: "PT Nadi Merah Xandira - SMLLC",
+    period: "Mar 2026 – Present",
+    slug: "hive",
+    brand: "#fbf7f7",
+  },
+  {
     role: "Field Enumerator",
+    company: "BPS-Statistic Indonesia",
     period: "August 2026 Period",
-    slug: "linear",
+    slug: "radar",
     brand: "#5E6AD2",
   },
   {
-    company: "General Elections Commission of Indonesia",
     role: "Electoral Data Officer - Voting Committee",
+    company: "General Elections Commission of Indonesia",
     period: "May 2024 – Jan 2025",
-    slug: "vercel",
+    slug: "looker",
     brand: "#0a0a0a",
   },
   {
-    company: "Srikandi Ganjar Jambi",
     role: "Event Organizer - Social Media Designer",
+    company: "Srikandi Ganjar Jambi",
     period: "Feb 2023 – Dec 2023",
-    slug: "stripe",
+    slug: "rubysinatra",
     brand: "#635BFF",
   },
   {
-    company: "Golkar Party – Jambi Provincial Board",
     role: "Graphics Designer - Administration Officer",
+    company: "Golkar Party – Jambi Provincial Board",
     period: "Nov 2022 – Oct 2023",
-    slug: "figma",
+    slug: "protondrive",
     brand: "#A259FF",
   },
   {
-    company: "Dinamika Bangsa University",
     role: "Computer Lab Assistant",
+    company: "Dinamika Bangsa University",
     period: "Mar 2022 – Oct 2022",
-    slug: "notion",
+    slug: "googlesearchconsole",
     brand: "#111111",
+  },
+  {
+    role: "Business Owner",
+    company: "Weststyle_Jmb - Thrift Shop",
+    period: "Des 2021 – Feb 2023",
+    slug: "aftership",
+    brand: "#fbf7f7",
   },
 ];
 
@@ -84,17 +98,17 @@ export function Experience(): ReactNode {
           <ul className="flex flex-col gap-2">
             {ENTRIES.map((entry) => (
               <li
-                key={`${entry.company}-${entry.period}`}
+                key={`${entry.role}-${entry.period}`}
                 className="bg-background border-foreground/5 flex items-center gap-4 rounded-3xl border p-2"
                 style={{ minHeight: ROW_HEIGHT }}
               >
                 <CompanyLogo entry={entry} />
                 <div className="flex min-w-0 flex-col">
                   <span className="text-foreground text-[17px] font-semibold tracking-tight sm:text-[18px]">
-                    {entry.company}
+                    {entry.role}
                   </span>
                   <span className="text-foreground/65 mt-0.5 text-[14px] tracking-tight sm:text-[15px]">
-                    {entry.role}
+                    {entry.company}
                     <span className="text-foreground/30 mx-2">•</span>
                     <span className="text-foreground/55">{entry.period}</span>
                   </span>
