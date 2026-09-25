@@ -33,31 +33,31 @@ type Project = {
 
 const PROJECTS: Project[] = [
   {
-    id: "loom",
+    id: "Event Identity",
     icon: Sparkles,
-    iconLabel: "LOOM",
+    iconLabel: "Element Identity Design",
     title:
-      "STILL UNDER WEB DEVELOPMENT PROGRESS.",
+      "PLATINUM UNAMA 2023",
     description:
-      "STILL UNDER WEB DEVELOPMENT PROGRESS.",
-    meta: "Design Engineer, 2024",
-    imageRatio: 752 / 497,
-    image:
-      "https://cdn.dribbble.com/userupload/46128964/file/b92b9d268dd928642ca94bd49e32923a.jpg?resize=752x497&vertical=center",
-    imageAlt: "Loom AI writing companion mockup",
-  },
-  {
-    id: "atlas",
-    icon: Compass,
-    iconLabel: "Atlas Studio",
-    title: "STILL UNDER WEB DEVELOPMENT PROGRESS.",
-    description:
-      "STILL UNDER WEB DEVELOPMENT PROGRESS.",
-    meta: "Design Engineer, 2024",
+      "Developing the graphic elements and content for the event identity of Platinum UNAMA 2023, the new student orientation event at Universitas Dinamika Bangsa Jambi. Project deliverables include the event theme design, mascot creation, social media content, committee division logos, and motion graphics, etc.",
+    meta: "Event Identity, 2023",
     imageRatio: 1024 / 768,
     image:
-      "https://cdn.dribbble.com/userupload/24599416/file/original-1ae5075dcd129aebb16bdbca24b41ac7.png?resize=1024x768&vertical=center",
-    imageAlt: "Atlas Studio brand and product sprint mockup",
+      "/platinum2023.webp",
+    imageAlt: "Event Identity Project by Naufal Azmi for Platinum 2023 Unama Jambi",
+  },
+  {
+    id: "Brand Identity",
+    icon: Compass,
+    iconLabel: "Brand Identity Guideline",
+    title: "CIHUY TEA - TAUFUFA TEH THAI",
+    description:
+      "Designed the complete brand identity for Cihuy Tea, a Jambi-based MSME featuring unique Thai tea and taufufa beverages. Deliverables included logo design, wordmark, color palette, container booth rendering, merchandise, and social media marketing visuals, etc.",
+    meta: "Brand Identity, 2026",
+    imageRatio: 800 / 475,
+    image:
+      "/cihuytea.webp",
+    imageAlt: "Brand Identity Guideline Project by Naufal Azmi for Cihuy Tea",
   },
   {
     id: "rhythm",
